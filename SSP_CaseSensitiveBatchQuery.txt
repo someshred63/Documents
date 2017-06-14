@@ -1,0 +1,5 @@
+how many alredy processed
+SELECT count() FROM SSP_Source_Document__c WHERE Source_System__c = 'CMGT - SRPDF' and (lastmodifiedbyId = '00531000008TF9s' and lastmodifieddate = today)
+how many to proceed
+SELECT count() FROM SSP_Source_Document__c WHERE Source_System__c = 'CMGT - SRPDF' and (lastmodifiedbyId <> '00531000008TF9s' and lastmodifieddate < today)
+
